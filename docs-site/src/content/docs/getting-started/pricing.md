@@ -28,7 +28,7 @@ Core platform meters cover the managed environment, workflow execution, and run 
 | Component | Meter | Price | How charges work |
 | --- | --- | --- | --- |
 | Managed environment | Environment hour | $0.042 per environment hour | This charge applies to each hour that a managed, customer-isolated environment is provisioned. |
-| Workflow runtime | Execution second | $0.00008 per execution second | This charge applies to the core execution time per second for an automation app. <br><br> The default profile includes 1 virtual CPU (vCPU) of core compute and 2 gibibyte (GiB) of memory. <br><br>The runtime host is active while you author workflows in the portal. |
+| Workflow runtime | Execution second | $0.00008 per execution second | This charge applies to the core execution time per second for an automation app. <br><br> The default profile includes 1 virtual CPU (vCPU) of core compute and 2 gibibytes (GiB) of memory. <br><br>The runtime host is active while you author workflows in the portal. |
 | Data retention | GB per month | $0.12 per GB, per month | This charge applies to the storage used for workflow run history. The platform keeps run history up to approximately 90 days. |
 
 ## Optional capability pricing
@@ -52,12 +52,12 @@ Suppose an organization has the following monthly usage:
 | Meter | Usage | Calculation | Estimated cost |
 |---|---|---|---|
 | Managed environment | 730 hours provisioned | 730 × $0.042 | $30.66 |
-| Automation app execution time | 150,000 execution seconds consumed. <br><br>Includes time for workflow execution and time for an active runtime during workflow authoring in the portal. | 150,000 x $0.00008 | $12.00 |
-| Standard connector actions | 1,000 actions | 1,000 x $0.000125 | $0.125 |
-| Enterprise connector actions for knowledge base operations | 100 actions | 100 x $0.001 | $0.10 |
-| Data retention for workflow run history | 20 GB | 20 x $0.12 | $2.40 |
-| Knowledge storage | 5 GB | 5 x $0.33 | $1.65 |
-| Sandbox | 100 executions <br><br>For 10 seconds, each execution uses 1 vCPU and 2 GiB of memory. | Executions: 100 x 10 seconds x 1 vCPU x $0.000024 <br><br>Memory: 100 x 10 seconds x 2 GiB x $0.000003 | Executions: $0.024 <br><br>Memory: $0.006 |
+| Automation app execution time | 150,000 execution seconds consumed. <br><br>Includes time for workflow execution and time for an active runtime during workflow authoring in the portal. | 150,000 × $0.00008 | $12.00 |
+| Standard connector actions | 1,000 actions | 1,000 × $0.000125 | $0.125 |
+| Enterprise connector actions for knowledge base operations | 100 actions | 100 × $0.001 | $0.10 |
+| Data retention for workflow run history | 20 GB | 20 × $0.12 | $2.40 |
+| Knowledge storage | 5 GB | 5 × $0.33 | $1.65 |
+| Sandbox | 100 executions <br><br>For 10 seconds, each execution uses 1 vCPU and 2 GiB of memory. | Executions: 100 × 10 seconds × 1 vCPU × $0.000024 <br><br>Memory: 100 × 10 seconds × 2 GiB × $0.000003 | Executions: $0.024 <br><br>Memory: $0.006 |
 | AI usage | Excluded | Charged as AACs, based on selected model and token consumption | Additional AAC charges |
 
 Estimated monthly total, excluding AI usage: $46.97
